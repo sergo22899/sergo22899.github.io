@@ -51,10 +51,24 @@
 	text-transform: uppercase;
 	border: none;
     font-size: 1.2rem;
+    transition: all 0.2s;
+    &:hover {
+        cursor: pointer;
+        background-color: darken(@btn-color, 5%);
+    }
+}
+a:hover {
+    text-decoration: none;
+}
+button, input, a {
+    &:focus {
+        outline: none;
+    }
 }
 
 body {
     .reg();
+
 }
 
 html {
@@ -67,12 +81,15 @@ section {
 
 /*main*/
 .main {
+
 	padding: 3rem 0 5rem;
-    background: #fff url(../img/main-bg.jpg) center center no-repeat;
+    background: #fff url(../img/main-bg.jpg) center top no-repeat;
+
     &-content {
         margin-top: 10rem;
 
         h1 {
+            margin-top: 0;
             margin-bottom: 4rem;
             .bold();
             font-size: 4rem;
@@ -144,6 +161,7 @@ section {
 	display: inline-block;
 	color: @text;
 	font-size: 2rem;
+    text-decoration: none;
 }
 
 span {
@@ -161,5 +179,39 @@ span {
 
 
 .wrap-block {
+
     text-align: right;
+}
+
+@media (max-width: 1199px) {
+    .main {
+        background-position: top left;
+        -webkit-background-size: cover;
+        background-size: cover;
+
+        &-content h1 {
+            font-size: 2.2rem;
+        }
+
+    }
+    .main-content {
+        text-align: center;
+    }
+    .main-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        text-align: center;
+    }
+
+    .phone-link {
+        margin-top: 1rem;
+    }
+    .header-btn {
+        margin-top: 1rem;
+    }
+
 }
