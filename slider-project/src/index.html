@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Слайдер для фото</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+		<!-- jQuery 1.8 or later, 33 KB -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- Fotorama from CDNJS, 19 KB -->
+	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-12">
+				<h1>Cлайдер для фотографий</h1>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-8 offset-xl-2">
+				<div class="fotorama"
+				data-allowfullscreen="true"
+				data-nav="thumbs"
+				data-autoplay="4000"
+				data-loop="true">
+					<img src="https://s.fotorama.io/1.jpg">
+					<img src="https://s.fotorama.io/2.jpg">
+					<img src="https://s.fotorama.io/3.jpg">
+				</div>
+			</div>
+		</div>
+</div>
+</body>
+</html>
